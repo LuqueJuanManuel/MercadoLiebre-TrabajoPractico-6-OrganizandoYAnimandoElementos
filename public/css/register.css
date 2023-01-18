@@ -1,0 +1,61 @@
+
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main div.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 20px 10px;
+    padding: 10px;
+}
+
+main div.inputContainer {
+    margin-top: 15px;
+    border-radius: 5px;
+    width: auto;
+    width: 200px;
+    max-width: 350px;
+}
+
+main span.errorMensage {
+   
+    color: red;
+    display: none;
+}
+
+main p {
+     margin: 10px 0px;
+     font-size: 1rem;
+}
+
+main div.buttonContainer {
+    margin: 20px 0px;
+
+}
+
+main span.btn {
+    margin: 0px 20px;
+}
+
+main button.btn-enviar {
+    background-color: var(--azul);
+    color: white;
+    border-radius: 10px;
+    margin: 0px 15px;
+    padding: 5px;
+}
+
+main button.btn-reset {
+    background-color: var(--verde);
+    color: white;
+    border-radius: 10px;
+    margin: 0px 15px;
+    padding: 5px;
+}
+
+

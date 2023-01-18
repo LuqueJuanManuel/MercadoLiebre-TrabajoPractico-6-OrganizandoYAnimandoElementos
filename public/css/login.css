@@ -1,0 +1,51 @@
+* {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+main div.form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+
+main div.inputContainer {
+    margin-top: 15px;
+    width: auto;
+    border-radius: 5px;
+}
+
+main span.errorMensage {
+    color: red;
+    display: none;
+}
+
+main input.inputStyle {
+    width: 250px;
+    max-width: 300px;
+}
+
+main div.buttonContainer {
+    width: auto;
+    margin: 25px;
+}
+
+main button.btn-enviar {
+    width: 250px;
+    max-width: 300px;
+    background-color: #01092c;
+    border-radius: 10px;
+    transition: 1s;
+}
+
+main button.btn-enviar:hover {
+    background-color: #0022AA;
+}
+
+main button.btn-enviar a {
+    color: white;
+}

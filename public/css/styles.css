@@ -1,0 +1,370 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;400;700&display=swap');
+
+/* VARIABLES */
+:root {
+    /* Variables de colores */
+    --amarillo: #EAC926;
+    --azul: #03264C;
+    --celeste: #1259c3;
+    --gris-oscuro: #666;
+    --gris-claro: #ebebeb;
+    --verde: #39b54a;
+    /* Fuentes */
+    --fuente: 'Roboto', sans-serif;
+    /* Tamaño tipografico*/
+    --parrafos: 12px;
+    --titulos: 24px;
+    --precio: 18px;
+    --descuento: 16px;
+    --descripcion: 16 px;
+
+}
+
+
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: var(--fuente);
+    box-sizing: border-box;
+}
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+li {
+    list-style: none;
+}
+
+body {
+    background-color: var(--gris-claro);
+}
+
+/* HEADER */
+
+header {
+    background-color: var(--amarillo);
+    padding: 25px 0;
+}
+
+
+header div.logo {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    margin-bottom: 10px;
+
+}
+
+header a.logo-mercadoLiebre {
+    width: 50%;
+    padding: 15px;
+}
+
+
+header div.busqueda {
+    width: 50%;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    padding: 15px;
+
+}
+
+header div.busqueda input {
+    width: 95%;
+}
+
+
+header div.busqueda button {
+    border: none;
+    margin-left: -18px;
+}
+
+header nav {
+    display: flex;
+}
+
+p {
+    font-size: var(--parrafos);
+}
+
+header p.formas-de-pago {
+    font-size: var(--parrafos);
+    text-align: center;
+    margin-bottom: 15px;
+}
+
+header nav ul.lista-superior {
+    margin-bottom: 15px;
+}
+
+header nav ul li a {
+    font-size: var(--parrafos);
+}
+
+header ul i {
+    margin-left: 5px;
+}
+
+header nav ul.lista-superior,
+ul.lista-inferior {
+    display: none;
+}
+
+header div.burger-menu {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: var(--celeste);
+    border-radius: 5px;
+    color: white;
+    padding: 7px;
+    margin: 25px auto 0;
+}
+
+/* MAIN */
+
+
+main.home__productos {
+    width: 90%;
+    margin-left: 5%;
+    margin-right: 5%;
+
+}
+
+main h4.seccion__productos--titulo {
+    margin-left: 10px;
+}
+
+.seccion__producto--tarjeta {
+    margin: 10px;
+    transition: 0.5s;
+   
+}
+
+.seccion__producto--tarjeta:hover {
+    box-shadow:  0px 0px 10px rgb(100, 100, 100);
+}
+
+
+.seccion__producto--tarjeta__bottom {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
+    border-top: 1px solid #ebebeb;
+    background-color: white;
+    padding: 15px;
+    position: relative;
+}
+
+.seccion__producto--tarjeta__bottom i:hover {
+    transform: rotate(-90deg); 
+}
+
+main section article i {
+    display: block;
+    font-size: 16px;
+    padding: 5px;
+    width: 30px;
+    height: 30px;
+    border: 1px solid #39b54a;
+    background-color: #FFF;
+    color: #39b54a;
+    border-radius: 50%;
+    position: absolute;
+    right: 20px;
+    top: -15px;
+}
+
+
+main article p.descuento {
+    font-size: 1rem;
+    color: rgb(87, 185, 87);
+    width: 70%;
+
+}
+
+main article p.precio {
+    font-size: 1.2rem;
+    width: 30%;
+}
+
+main article h5 {
+    margin-top: 10px;
+    color: white;
+    transition: color 1500ms;
+    
+}
+
+main article h5:hover {
+    color: black;
+    
+}
+
+.seccion__productos--titulo__ofertas {
+    font-size: 1.5rem;
+    margin: 10px;
+}
+
+
+
+
+/* FOOTER */
+
+footer {
+    padding: 50px 10px 10px;
+    background-color: white;
+}
+
+
+
+footer article {
+    text-align: center;
+    margin-bottom: 50px;
+}
+
+footer article i {
+    font-size: 2em;
+    color: var(--celeste);
+    margin-bottom: 10px;
+}
+
+footer span {
+    font-size: var(--parrafos);
+}
+
+footer div.iconos i {
+    transition: 0.5s;
+}
+
+footer div.iconos i:hover {
+    color: #39b54a;
+}
+
+
+/* breakPoints */
+
+/* Tablets */
+
+@media (min-width:361px) {
+
+    /* Header */
+
+    header div.contenedor-tablet-desktop {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    header div.busqueda {
+        width: 50%;
+        margin-bottom: 10px;
+        margin-top: 0px;
+        padding: 15px;
+    
+    }
+
+    header nav {
+        display: flex;
+        justify-content: space-around;
+    }
+
+    header nav ul.lista-superior,
+    ul.lista-inferior {
+        display: inherit;
+        padding: 5px;
+    }
+
+    header nav ul li {
+        padding: 5px;
+    }
+
+    header nav div.burger-menu {
+        display: none;
+    }
+
+    /* Main */
+
+
+    
+    main section.caja_contenedora_de_articulos {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+    }
+
+
+    .seccion__producto--tarjeta {
+        width: 43%;
+        transition: 0.5s;
+    }
+
+    .seccion__producto--tarjeta:hover {
+         box-shadow:  0px 0px 10px rgb(100, 100, 100);
+    }
+
+
+
+    .seccion__producto--tarjeta__bottom {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        width: 100%;
+        border-top: 1px solid #ebebeb;
+        background-color: white;
+        padding: 15px;
+        position: relative;
+    }
+
+    main article p.descuento {
+        font-size: 1rem;
+        color: rgb(87, 185, 87);
+        width: auto;
+    
+    }
+    
+    main article p.precio {
+        font-size: 1.2rem;
+        width: auto;
+    }
+
+    main article h5 {
+        display: inherit;
+        font-size: var(--descripcion);
+        font-weight: normal;
+        color: var(--gris-oscuro);
+    }
+
+}
+
+/* Desktop */
+
+@media (min-width: 769px) {
+
+    .seccion__producto--tarjeta {
+
+        width: 20%;
+        transition: 0.5s;
+    }
+
+    .seccion__producto--tarjeta:hover {
+        box-shadow:  0px 0px 10px rgb(100, 100, 100);
+    }
+    
+
+    footer section.footer {
+        display: flex;
+        justify-content: space-between;
+    }
+
+    footer article {
+        text-align: center;
+        margin-bottom: 50px;
+        width: 30%;
+    }
+
+}
